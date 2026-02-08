@@ -26,7 +26,7 @@ def add_comp():
   name=input("Введите название устройства: ")
   brand=input("Введите бренд устройства: ")
   processor=input("Введите название процессора: ")
-  videocard=input("Введите название видеокарты: ")
+  videocard=int(input("Введите мощность видеокарты: "))
   RAM=int(input("Введите ОЗУ устройства: "))
   SSD=int(input("Введите объем SSD: "))
   weight=int(input("Введите вес устройства(кг): "))
