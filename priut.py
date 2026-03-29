@@ -240,3 +240,20 @@ def show_all_pets():
     for pet in Pet.all_pets:
         status = pet.get_status()
         print(f"{pet.name} ({pet.type}) — {status}")
+
+def is_happy(self):
+       
+        if self.health < 70:
+            print("Питомец несчастлив: здоровье ниже нормы.")
+            return False
+        if self.mood < 60:
+            print("Питомец несчастлив: настроение ниже нормы.")
+            return False
+        if self.hunger > 40:
+            print("Питомец несчастлив: голод выше нормы.")
+            return False
+        if self.energy < 50:
+            print("Питомец несчастлив: энергия ниже нормы.")
+            return False
+        print("Питомец счастлив!")
+        return True
